@@ -7,7 +7,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-900 text-white font-sans">
-
+<!--Pop Up From Nama Pengunjung-->
+<div id="nameModal" class="fixed inset-0 z-[100] flex items-center justify-center bg-black bg-opacity-90 px-4">
+    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 max-w-sm w-full shadow-2xl text-center">
+        <h3 class="text-2xl font-bold mb-4 text-blue-400">Selamat Datang!</h3>
+        <p class="text-gray-300 mb-6">Sebelum masuk, boleh tahu siapa namamu?</p>
+        <input type="text" id="visitorNameInput" placeholder="Masukkan namamu..." 
+               class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4 text-center font-semibold">
+        <button onclick="saveName()" 
+                class="w-full py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-bold transition shadow-lg">Mulai Jelajahi</button>
+    </div>
+</div>
+<!--Navbar-->
     <nav class="p-6 flex justify-between items-center border-b border-gray-800">
         <h1 class="text-2xl font-bold text-blue-500">Porto.Me</h1>
         <ul class="flex gap-6">
@@ -16,16 +27,88 @@
             <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
         </ul>
     </nav>
-
+<!--Hero Section-->
     <section class="h-[80vh] flex flex-col justify-center items-center text-center px-4">
-        <h2 class="text-5xl md:text-7xl font-extrabold mb-4">Halo, Perkenalkan Saya Pery 👋</h2>
-        <p class="text-xl text-gray-400 max-w-2xl">Saya adalah seorang desainer grafis yang fokus pada pembuatan karya visual yang menarik dan inovatif.</p>
-        <a href="#projects" class="mt-8 px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-full font-bold transition">Lihat Karya Saya</a>
+        <span class="text-5xl mb-4 animate-bounce">👋</span> 
+        <h2 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
+            Halo <span id="displayName" class="text-blue-500"></span>,<br> 
+            Saya Pery Irawan
+        </h2>
+        <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+            Seorang desainer grafis yang fokus pada pembuatan karya visual yang menarik dan inovatif.
+        </p>
+    <a href="#projects" class="mt-8 px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-full font-bold transition shadow-lg shadow-blue-500/20">
+        Lihat Karya Saya
+    </a>
     </section>
+<!-- About Me Section -->
+    <section id="about" class="py-20 px-6 bg-gray-800/50">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            
+            <div class="w-64 h-64 md:w-80 md:h-80 relative">
+                <div class="absolute inset-0 bg-blue-500 rounded-2xl rotate-6 z-0"></div>
+                <img src="https://picsum.photos/400/400" alt="Foto Profil" 
+                     class="relative z-10 w-full h-full object-cover rounded-2xl shadow-xl border-2 border-gray-700">
+            </div>   
+            <div class="flex-1">
+                <h3 class="text-3xl font-bold text-blue-400 mb-4 text-center md:text-left">Tentang Saya</h3>
+                <p class="text-gray-300 leading-relaxed mb-6 text-lg">
+                    Halo! Saya Pery Irawan, seorang Grapich Designer yang berdomisili di Bandung, Purwakarta. 
+                    Saya memiliki gairah besar dalam menciptakan karya yang tidak hanya estetik, tetapi juga memberikan solusi nyata bagi pengguna.
+                </p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                    <div class="flex items-center gap-2">
+                        <span class="text-blue-500">📍</span>
+                        <span>Asal: Kapuas Hulu, Kalimantan Barat, Indonesia</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-blue-500">💼</span>
+                        <span>Pengalaman: 4 Tahun</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-blue-500">🎓</span>
+                        <span>Pendidikan: S1 Pendidikan Agama Islam</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-blue-500">📧</span>
+                        <span>Email: peryirawan543@gmail.com</span>
+                    </div>
+                </div>
+            </div>
 
+        </div>
+    </section>
+<!-- Projects Section -->
     <footer class="p-10 border-t border-gray-800 text-center text-gray-500">
         <p>&copy; 2024 Dibuat dengan 🔥 oleh Adib Sinulingga</p>
     </footer>
+<!-- Modal Pop-up -->
+    <script>
+    function saveName() {
+        // Ambil nilai dari input
+        const nameInput = document.getElementById('visitorNameInput').value;
+        const displayElement = document.getElementById('displayName');
+        const modal = document.getElementById('nameModal');
 
+        // Jika input tidak kosong
+        if (nameInput.trim() !== "") {
+            // Tampilkan nama di Hero Section
+            displayElement.innerText = nameInput;
+            // Sembunyikan pop-up dengan efek transisi atau langsung
+            modal.style.display = 'none';
+        } else {
+            // Kalau kosong, ingatkan pengunjung
+            alert("Tolong masukkan namamu dulu ya agar lebih akrab! 😊");
+        }
+    }
+
+    // Supaya bisa tekan 'Enter' di keyboard untuk submit
+    document.getElementById("visitorNameInput").addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            saveName();
+        }
+    });
+    </script>
 </body>
 </html>
