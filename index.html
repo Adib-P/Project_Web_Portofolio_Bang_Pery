@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Pery Irawan</title>
+    <title>Pery Irawan | Graphic Designer</title>
+    <link rel="icon" type="image/png" href="Foto/logo-pery.png">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-gray-900 text-white font-sans">
     <!--Pop Up From Nama Pengunjung-->
@@ -32,7 +34,7 @@
         <span class="text-5xl mb-4 animate-bounce">👋</span> 
         <h2 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
             Halo <span id="displayName" class="text-blue-500"></span>,<br> 
-            Saya Pery Irawan
+            Perkenalkan, Saya Pery Irawan!   
         </h2>
         <p class="text-xl text-gray-400 max-w-2xl mx-auto">
             Seorang desainer grafis yang fokus pada pembuatan karya visual yang menarik dan inovatif.
@@ -42,18 +44,20 @@
     </a>
     </section>
     <!-- About Me Section -->
+    <section id="about" data-aos="fade-up">
     <section id="about" class="py-20 px-6 bg-gray-800/50">
         <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
-            
+            <!-- Foto Profil -->
             <div class="w-64 h-64 md:w-80 md:h-80 relative">
                 <div class="absolute inset-0 bg-blue-500 rounded-2xl rotate-6 z-0"></div>
                 <img src="Foto/foto-pery.jpeg" alt="Foto Profil" 
-                     class="relative z-10 w-full h-full object-cover rounded-2xl shadow-xl border-2 border-gray-700">
-            </div>   
+                    class="relative z-10 w-full h-full object-cover rounded-2xl shadow-xl border-2 border-gray-700">
+            </div>
+            <!-- Deskripsi Diri -->
             <div class="flex-1">
                 <h3 class="text-3xl font-bold text-blue-400 mb-4 text-center md:text-left">Tentang Saya</h3>
                 <p class="text-gray-300 leading-relaxed mb-6 text-lg">
-                    Halo! Saya Pery Irawan, seorang Grapich Designer yang berdomisili di Bandung, Purwakarta. 
+                    Halo! Saya Pery Irawan, seorang Graphic Designer yang berdomisili di Bandung, Purwakarta. 
                     Saya memiliki gairah besar dalam menciptakan karya yang tidak hanya estetik, tetapi juga memberikan solusi nyata bagi pengguna.
                 </p>
                 
@@ -76,8 +80,8 @@
                     </div>
                 </div>
             </div>
-
         </div>
+    </section>
     </section>
     <!-- Skills Section -->
     <section id="skills" class="py-20 px-6 bg-gray-900">
@@ -155,10 +159,12 @@
                 <button onclick="filterProjects('branding')" class="px-6 py-2 rounded-full bg-gray-700 hover:bg-blue-600 font-bold transition">Branding</button>
                 <button onclick="filterProjects('socmed')" class="px-6 py-2 rounded-full bg-gray-700 hover:bg-blue-600 font-bold transition">Social Media</button>
                 <button onclick="filterProjects('poster')" class="px-6 py-2 rounded-full bg-gray-700 hover:bg-blue-600 font-bold transition">Poster</button>
+                <button onclick="filterProjects('photos')" class="px-6 py-2 rounded-full bg-gray-700 hover:bg-blue-600 font-bold transition">Photos</button>
             </div>
 
             <div id="projectGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-500">
                 <!--Branding-->
+                <section id="about" data-aos="fade-up">
                 <div class="project-item branding group relative overflow-hidden rounded-2xl bg-gray-700 h-64 shadow-lg">
                     <img src="Project/branding1.jpg" alt="Logo Design" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
@@ -168,7 +174,9 @@
                         </button>
                     </div>
                 </div>
+                </section>
 
+                <section id="about" data-aos="fade-up">
                 <div class="project-item branding group relative overflow-hidden rounded-2xl bg-gray-700 h-64 shadow-lg">
                     <img src="Project/branding2.jpeg" alt="Logo Design" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
@@ -178,7 +186,9 @@
                         </button>
                     </div>
                 </div>
+                </section>
 
+                <section id="about" data-aos="fade-up">
                 <div class="project-item branding group relative overflow-hidden rounded-2xl bg-gray-700 h-64 shadow-lg">
                     <img src="Project/branding3.jpg" alt="Logo Design" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
@@ -188,7 +198,9 @@
                         </button>
                     </div>
                 </div>
+                </section>
 
+                <section id="about" data-aos="fade-up">
                 <div class="project-item branding group relative overflow-hidden rounded-2xl bg-gray-700 h-64 shadow-lg">
                     <img src="Project/branding4.jpg" alt="Logo Design" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
@@ -198,7 +210,9 @@
                         </button>
                     </div>
                 </div>
+                </section>
                 <!--Social Media-->
+                <section id="about" data-aos="fade-up">
                 <div class="project-item socmed group relative overflow-hidden rounded-2xl bg-gray-700 h-64 shadow-lg">
                     <img src="Project/social-media1.jpg" alt="Socmed Design" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
@@ -208,7 +222,9 @@
                         </button>
                     </div>
                 </div>
+                </section>
 
+                <section id="about" data-aos="fade-up">
                 <div class="project-item socmed group relative overflow-hidden rounded-2xl bg-gray-700 h-64 shadow-lg">
                     <img src="Project/social-media2.jpg" alt="Socmed Design" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
@@ -218,7 +234,9 @@
                         </button>
                     </div>
                 </div>
+                </section>
 
+                <section id="about" data-aos="fade-up">
                 <div class="project-item socmed group relative overflow-hidden rounded-2xl bg-gray-700 h-64 shadow-lg">
                     <img src="Project/social-media3.jpg" alt="Socmed Design" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
@@ -228,7 +246,9 @@
                         </button>
                     </div>
                 </div>
+                </section>
 
+                <section id="about" data-aos="fade-up">
                 <div class="project-item socmed group relative overflow-hidden rounded-2xl bg-gray-700 h-64 shadow-lg">
                     <img src="Project/social-media4.jpeg" alt="Socmed Design" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
@@ -238,7 +258,9 @@
                         </button>
                     </div>
                 </div>
+                </section>
 
+                <section id="about" data-aos="fade-up">
                 <div class="project-item socmed group relative overflow-hidden rounded-2xl bg-gray-700 h-64 shadow-lg">
                     <img src="Project/social-media5.jpg" alt="Socmed Design" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
@@ -248,17 +270,9 @@
                         </button>
                     </div>
                 </div>
-
-                <div class="project-item socmed group relative overflow-hidden rounded-2xl bg-gray-700 h-64 shadow-lg">
-                    <img src="Project/social-media6.jpg" alt="Socmed Design" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
-                        <button onclick="openLightbox('Project/social-media6.jpg', 'Feed Instagram untuk Event Olahraga')"
-                        class="text-white font-bold border-2 border-white px-4 py-2 hover:bg-white hover:text-black transition">
-                            LIHAT DETAIL
-                        </button>
-                    </div>
-                </div>
+                </section>
                 <!--Poster-->
+                <section id="about" data-aos="fade-up">
                 <div class="project-item poster group relative overflow-hidden rounded-2xl bg-gray-700 h-64 shadow-lg">
                     <img src="Project/poster1.jpg" alt="Poster Design" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
@@ -268,7 +282,9 @@
                         </button>
                     </div>
                 </div>
+                </section>
 
+                <section id="about" data-aos="fade-up">
                 <div class="project-item poster group relative overflow-hidden rounded-2xl bg-gray-700 h-64 shadow-lg">
                     <img src="Project/poster2.jpg" alt="Poster Design" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
@@ -278,17 +294,103 @@
                         </button>
                     </div>
                 </div>
+                </section>
 
+                <section id="about" data-aos="fade-up">
                 <div class="project-item poster group relative overflow-hidden rounded-2xl bg-gray-700 h-64 shadow-lg">
                     <img src="Project/poster3.jpg" alt="Poster Design" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
-                        <button onclick="openLightbox('Project/poster3.jpg', 'Desain Poster untuk Pelaksanaan Kegiatan Iktikaf Ramadhan di Masjid (Masjid Ar-Rahman)')" 
+                        <button onclick="openLightbox('Project/poster3.jpg', 'Desain Poster untuk Pelaksanaan Kegiatan Iktikaf Ramadhan (Masjid Ar-Rahman)')" 
                         class="text-white font-bold border-2 border-white px-4 py-2 hover:bg-white hover:text-black transition">
                             LIHAT DETAIL
                         </button>
                     </div>
                 </div>
+                </section>
 
+                <section id="about" data-aos="fade-up">
+                <div class="project-item poster group relative overflow-hidden rounded-2xl bg-gray-700 h-64 shadow-lg">
+                    <img src="Project/poster4.jpg" alt="Poster Design" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
+                        <button onclick="openLightbox('Project/poster4.jpg', 'Desain Poster untuk Event Olahraga')" 
+                        class="text-white font-bold border-2 border-white px-4 py-2 hover:bg-white hover:text-black transition">
+                            LIHAT DETAIL
+                        </button>
+                    </div>
+                </div>
+                </section>
+
+                <section id="about" data-aos="fade-up">
+                <div class="project-item poster group relative overflow-hidden rounded-2xl bg-gray-700 h-64 shadow-lg">
+                    <img src="Project/poster5.jpg" alt="Poster Design" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
+                        <button onclick="openLightbox('Project/poster5.jpg', 'Desain Poster untuk Event Olahraga')" 
+                        class="text-white font-bold border-2 border-white px-4 py-2 hover:bg-white hover:text-black transition">
+                            LIHAT DETAIL
+                        </button>
+                    </div>
+                </div>
+                </section>
+                <!--Photos-->
+                <section id="about" data-aos="fade-up">
+                <div class="project-item photos group relative overflow-hidden rounded-2xl bg-gray-700 h-64 shadow-lg">
+                    <img src="Project/photos1.jpeg" alt="Photos" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
+                        <button onclick="openLightbox('Project/photos1.jpeg', 'Foto Pemandangan Alam')" 
+                        class="text-white font-bold border-2 border-white px-4 py-2 hover:bg-white hover:text-black transition">
+                            LIHAT DETAIL
+                        </button>
+                    </div>
+                </div>
+                </section>
+
+                <section id="about" data-aos="fade-up">
+                <div class="project-item photos group relative overflow-hidden rounded-2xl bg-gray-700 h-64 shadow-lg">
+                    <img src="Project/photos2.jpeg" alt="Photos" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
+                        <button onclick="openLightbox('Project/photos2.jpeg', 'Foto Gedung')"
+                        class="text-white font-bold border-2 border-white px-4 py-2 hover:bg-white hover:text-black transition">
+                            LIHAT DETAIL
+                        </button>
+                    </div>
+                </div>
+                </section>
+
+                <section id="about" data-aos="fade-up">
+                <div class="project-item photos group relative overflow-hidden rounded-2xl bg-gray-700 h-64 shadow-lg">
+                    <img src="Project/photos3.jpeg" alt="Photos" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
+                        <button onclick="openLightbox('Project/photos3.jpeg', 'Foto Fauna')"
+                        class="text-white font-bold border-2 border-white px-4 py-2 hover:bg-white hover:text-black transition">
+                            LIHAT DETAIL
+                        </button>
+                    </div>
+                </div>
+                </section>
+
+                <section id="about" data-aos="fade-up">
+                <div class="project-item photos group relative overflow-hidden rounded-2xl bg-gray-700 h-64 shadow-lg">
+                    <img src="Project/photos4.jpeg" alt="Photos" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
+                        <button onclick="openLightbox('Project/photos4.jpeg', 'Foto Bangunan')" 
+                        class="text-white font-bold border-2 border-white px-4 py-2 hover:bg-white hover:text-black transition">
+                            LIHAT DETAIL
+                        </button>
+                    </div>
+                </div>
+                </section>
+
+                <section id="about" data-aos="fade-up">
+                <div class="project-item photos group relative overflow-hidden rounded-2xl bg-gray-700 h-64 shadow-lg">
+                    <img src="Project/photos5.jpeg" alt="Photos" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
+                        <button onclick="openLightbox('Project/photos5.jpeg', 'Foto Pemandangan Stasiun')"
+                        class="text-white font-bold border-2 border-white px-4 py-2 hover:bg-white hover:text-black transition">
+                            LIHAT DETAIL
+                        </button>
+                    </div>
+                </div>
+                </section>
             </div>
         </div>
     </section>
@@ -315,7 +417,7 @@
     </section>
 <!-- Legatitation Section -->
     <footer class="p-10 border-t border-gray-800 text-center text-gray-500">
-        <p>&copy; 2024 Dibuat oleh Adib Sinulingga.</p>
+        <p>&copy; 2025 Dibuat oleh Adib Sinulingga.co.</p>
     </footer>
 <!-- Lightbox Modal -->
     <div id="lightbox" class="fixed inset-0 z-[150] hidden bg-black/95 flex items-center justify-center p-4">
@@ -328,69 +430,79 @@
     </div>
 <!-- Js Section -->
     <script>
-    // Fungsi untuk menyimpan nama pengunjung dan menampilkannya di Hero Section
-    function saveName() {
-        // Ambil nilai dari input
-        const nameInput = document.getElementById('visitorNameInput').value;
-        const displayElement = document.getElementById('displayName');
-        const modal = document.getElementById('nameModal');
+        // Fungsi untuk menyimpan nama pengunjung dan menampilkannya di Hero Section
+        function saveName() {
+            // Ambil nilai dari input
+            const nameInput = document.getElementById('visitorNameInput').value;
+            const displayElement = document.getElementById('displayName');
+            const modal = document.getElementById('nameModal');
 
-        // Jika input tidak kosong
-        if (nameInput.trim() !== "") {
-            // Tampilkan nama di Hero Section
-            displayElement.innerText = nameInput;
-            // Sembunyikan pop-up dengan efek transisi atau langsung
-            modal.style.display = 'none';
-        } else {
-            // Kalau kosong, ingatkan pengunjung
-            alert("Tolong masukkan namamu dulu ya agar lebih akrab! 😊");
-        }
-    }
-
-    // Supaya bisa tekan 'Enter' di keyboard untuk submit
-    document.getElementById("visitorNameInput").addEventListener("keypress", function(event) {
-        if (event.key === "Enter") {
-            saveName();
-        }
-    });
-
-    // Fungsi untuk filter proyek berdasarkan kategori
-    function filterProjects(category) {
-    const items = document.querySelectorAll('.project-item');
-    
-    items.forEach(item => {
-        if (category === 'all') {
-            item.style.display = 'block'; // Tampilkan semua
-        } else {
-            // Jika class item mengandung nama kategori, tampilkan. Jika tidak, sembunyikan.
-            if (item.classList.contains(category)) {
-                item.style.display = 'block';
+            // Jika input tidak kosong
+            if (nameInput.trim() !== "") {
+                // Tampilkan nama di Hero Section
+                displayElement.innerText = nameInput;
+                // Sembunyikan pop-up dengan efek transisi atau langsung
+                modal.style.display = 'none';
             } else {
+                // Kalau kosong, ingatkan pengunjung
+                alert("Tolong masukkan namamu dulu ya agar lebih akrab! 😊");
+            }
+        }
+
+        // Supaya bisa tekan 'Enter' di keyboard untuk submit
+        document.getElementById("visitorNameInput").addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                saveName();
+            }
+        });
+
+        // Fungsi untuk filter proyek berdasarkan kategori
+        function filterProjects(category) {
+        const items = document.querySelectorAll('.project-item');
+    
+        items.forEach(item => {
+            if (category === 'all') {
+                item.style.display = 'block'; // Tampilkan semua
+            } else {
+                // Jika class item mengandung nama kategori, tampilkan. Jika tidak, sembunyikan.
+                if (item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
                     item.style.display = 'none';
                 }
             }
+            item.classList.remove('aos-animate'); // Reset animasi AOS
         });
-    }
+        
+        AOS.refresh(); // Refresh AOS supaya animasi tetap jalan setelah filter
+        }
 
-    // Fungsi untuk membuka lightbox dengan gambar dan judul yang sesuai
-    function openLightbox(src, title) {
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    const lightboxCaption = document.getElementById('lightbox-caption');
+        // Fungsi untuk membuka lightbox dengan gambar dan judul yang sesuai
+        function openLightbox(src, title) {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.getElementById('lightbox-caption');
 
-    lightboxImg.src = src; // Pasang sumber gambarnya
-    lightboxCaption.innerText = title; // Pasang judulnya
-    lightbox.classList.remove('hidden'); // Munculkan modal
-    }
+        lightboxImg.src = src; // Pasang sumber gambarnya
+        lightboxCaption.innerText = title; // Pasang judulnya
+        lightbox.classList.remove('hidden'); // Munculkan modal
+        }
 
-    function closeLightbox() {
-        document.getElementById('lightbox').classList.add('hidden'); // Sembunyikan modal
-    }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.add('hidden'); // Sembunyikan modal
+        }
 
-    // Tambahan: Close kalau klik di luar gambar (area hitam)
-    document.getElementById('lightbox').addEventListener('click', function(e) {
-        if (e.target === this) closeLightbox();
-    });
+        // Tambahan: Close kalau klik di luar gambar (area hitam)
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) closeLightbox();
+        });
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+        duration: 2000, // Ukurannya milidtetik, jadi 1000 = 1 detik
+        once: true,     // Animasi cuma jalan sekali pas di-scroll
+    });
+</script>
 </body>
 </html>
