@@ -9,7 +9,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-gray-900 text-white font-sans">
-    <!--Pop Up From Nama Pengunjung-->
     <div id="nameModal" class="fixed inset-0 z-[100] flex items-center justify-center bg-black bg-opacity-90 px-4">
         <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 max-w-sm w-full shadow-2xl text-center">
             <h3 class="text-2xl font-bold mb-4 text-blue-400">Selamat Datang!</h3>
@@ -20,7 +19,6 @@
                 class="w-full py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-bold transition shadow-lg">Mulai Jelajahi</button>
         </div>
     </div>
-    <!--Navbar-->
     <nav class="p-6 flex justify-between items-center border-b border-gray-800">
         <h1 class="text-2xl font-bold text-blue-500">Porto.Me</h1>
         <ul class="flex gap-6">
@@ -29,7 +27,6 @@
             <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
         </ul>
     </nav>
-    <!--Hero Section-->
     <section class="h-[80vh] flex flex-col justify-center items-center text-center px-4">
         <span class="text-5xl mb-4 animate-bounce">👋</span> 
         <h2 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
@@ -43,16 +40,13 @@
         Lihat Karya Saya
     </a>
     </section>
-    <!-- About Me Section -->
     <section id="about" class="py-20 px-6 bg-gray-800/50" data-aos="fade-up">
         <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
-            <!-- Foto Profil -->
             <div class="w-64 h-64 md:w-80 md:h-80 relative">
                 <div class="absolute inset-0 bg-blue-500 rounded-2xl rotate-6 z-0"></div>
                 <img src="Foto/foto-pery.jpeg" alt="Foto Profil" 
                     class="relative z-10 w-full h-full object-cover rounded-2xl shadow-xl border-2 border-gray-700">
             </div>
-            <!-- Deskripsi Diri -->
             <div class="flex-1">
                 <h3 class="text-3xl font-bold text-blue-400 mb-4 text-center md:text-left">Tentang Saya</h3>
                 <p class="text-gray-300 leading-relaxed mb-6 text-lg">
@@ -81,11 +75,9 @@
             </div>
         </div>
     </section>
-    <!-- Skills Section -->
     <section id="skills" class="py-20 px-6 bg-gray-900">
         <div class="max-w-4xl mx-auto">
             <h3 class="text-3xl font-bold text-blue-400 mb-12 text-center">Keahlian & Kemampuan</h3>
-            <!-- Design Section -->
             <div class="mb-12">
                 <div class="flex items-center gap-2 mb-6">
                     <span class="text-2xl">🎨</span>
@@ -114,7 +106,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Additional Skills Section -->
             <div>
                 <div class="flex items-center gap-2 mb-6">
                     <span class="text-2xl">🛠️</span>
@@ -146,7 +137,6 @@
 
         </div>
     </section>
-    <!-- Projects Section -->
     <section id="projects" class="py-20 px-6 bg-gray-800/30">
         <div class="max-w-6xl mx-auto">
             <h3 class="text-3xl font-bold text-blue-400 mb-4 text-center">Portofolio Karya</h3>
@@ -161,7 +151,6 @@
             </div>
 
             <div id="projectGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-500">
-                <!--Branding-->
                 <div class="project-item branding group relative overflow-hidden rounded-2xl bg-gray-700 h-64 shadow-lg" data-aos="fade-up">
                     <img src="Project/branding1.jpg" alt="Logo Design" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
@@ -201,7 +190,7 @@
                         </button>
                     </div>
                 </div>
-                <!--Social Media-->
+
                 <div class="project-item socmed group relative overflow-hidden rounded-2xl bg-gray-700 h-64 shadow-lg" data-aos="fade-up">
                     <img src="Project/social-media1.jpg" alt="Socmed Design" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
@@ -251,7 +240,7 @@
                         </button>
                     </div>
                 </div>
-                <!--Poster-->
+
                 <div class="project-item poster group relative overflow-hidden rounded-2xl bg-gray-700 h-64 shadow-lg" data-aos="fade-up">
                     <img src="Project/poster1.jpg" alt="Poster Design" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
@@ -301,7 +290,7 @@
                         </button>
                     </div>
                 </div>
-                <!--Photos-->
+
                 <div class="project-item photos group relative overflow-hidden rounded-2xl bg-gray-700 h-64 shadow-lg" data-aos="fade-up">
                     <img src="Project/photos1.jpeg" alt="Photos" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
@@ -354,7 +343,6 @@
             </div>
         </div>
     </section>
-    <!-- Contact Section -->
     <section id="contact" class="py-20 px-6 text-center">
         <div class="max-w-3xl mx-auto">
             <h3 class="text-3xl font-bold text-blue-400 mb-6">Tertarik Bekerja Sama?</h3>
@@ -375,11 +363,9 @@
             </div>
         </div>
     </section>
-<!-- Legatitation Section -->
     <footer class="p-10 border-t border-gray-800 text-center text-gray-500">
         <p>&copy; 2025 Dibuat oleh Adib Sinulingga.co.</p>
     </footer>
-<!-- Lightbox Modal -->
     <div id="lightbox" class="fixed inset-0 z-[150] hidden bg-black/95 flex items-center justify-center p-4">
         <button onclick="closeLightbox()" class="absolute top-5 right-5 text-white text-4xl hover:text-gray-400">&times;</button>
     
@@ -388,84 +374,67 @@
             <h4 id="lightbox-caption" class="text-white text-xl font-bold mt-4"></h4>
         </div>
     </div>
-<!-- Js Section -->
     <script>
-        // Fungsi untuk menyimpan nama pengunjung dan menampilkannya di Hero Section
         function saveName() {
-            // Ambil nilai dari input
             const nameInput = document.getElementById('visitorNameInput').value;
             const displayElement = document.getElementById('displayName');
             const modal = document.getElementById('nameModal');
 
-            // Jika input tidak kosong
             if (nameInput.trim() !== "") {
-                // Tampilkan nama di Hero Section
                 displayElement.innerText = nameInput;
-                // Sembunyikan pop-up dengan efek transisi atau langsung
                 modal.style.display = 'none';
             } else {
-                // Kalau kosong, ingatkan pengunjung
                 alert("Tolong masukkan namamu dulu ya agar lebih akrab! 😊");
             }
         }
 
-        // Supaya bisa tekan 'Enter' di keyboard untuk submit
         document.getElementById("visitorNameInput").addEventListener("keypress", function(event) {
             if (event.key === "Enter") {
                 saveName();
             }
         });
 
-        // Fungsi untuk filter proyek berdasarkan kategori
         function filterProjects(category) {
             const items = document.querySelectorAll('.project-item');
-            let visibleCounter = 0; // Untuk menghitung berapa item yang ditampilkan setelah filter
+            let visibleCounter = 0;
     
             items.forEach(item => {
-                // Reset animasi AOS sebelum filter
                 item.classList.remove('aos-animate');
 
                 if (category === 'all' || item.classList.contains(category)) {
-                    item.classList.remove('hidden'); // Tampilkan item yang sesuai kategori
+                    item.classList.remove('hidden');
 
-                    // --- KALIBRASI DINAMIS DI SINI ---
-                    // Gambar yang muncul akan diberi delay berdasarkan urutannya saat itu
-                    // Gambar ke-1 (index 0) delay 0, gambar ke-2 delay 200, dst.
                     let dynamicDelay = (visibleCounter % 3) * 200; 
                     item.setAttribute('data-aos-delay', dynamicDelay);
                     visibleCounter++; 
-                    // ---------------------------------
 
                     setTimeout(() => {
-                        item.classList.add('aos-animate'); // Tambahkan kembali animasi AOS setelah filter
-                    }, 50); // Delay kecil supaya animasi tetap jalan
+                        item.classList.add('aos-animate');
+                    }, 50);
                 } else {
-                    item.classList.add('hidden'); // Sembunyikan item yang tidak sesuai kategori / Sembunyikan Total
+                    item.classList.add('hidden');
                 }
             });
             
-            // Memberitau AOS untuk menghitung ulang grid element yang baru saja di-filter
             setTimeout(() => {
-                AOS.refresh(); // Refresh AOS setelah filter untuk memastikan animasi tetap berjalan
-            }, 100); // Delay supaya filter sudah selesai diterapkan sebelum refresh AOS
+                AOS.refresh();
+            }, 100);
         }
 
-        // Fungsi untuk membuka lightbox dengan gambar dan judul yang sesuai
         function openLightbox(src, title) {
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = document.getElementById('lightbox-img');
         const lightboxCaption = document.getElementById('lightbox-caption');
 
-        lightboxImg.src = src; // Pasang sumber gambarnya
-        lightboxCaption.innerText = title; // Pasang judulnya
-        lightbox.classList.remove('hidden'); // Munculkan modal
+        lightboxImg.src = src;
+        lightboxCaption.innerText = title;
+        lightbox.classList.remove('hidden');
         }
 
         function closeLightbox() {
-            document.getElementById('lightbox').classList.add('hidden'); // Sembunyikan modal
+            document.getElementById('lightbox').classList.add('hidden');
         }
 
-        // Tambahan: Close kalau klik di luar gambar (area hitam)
         document.getElementById('lightbox').addEventListener('click', function(e) {
             if (e.target === this) closeLightbox();
         });
@@ -473,9 +442,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
-        duration: 1200, // Ukurannya milidtetik, jadi 1000 = 1 detik
-        once: true,     // Animasi cuma jalan sekali pas di-scroll
-        anchorPlacement: 'top-bottom', // Mulai animasi ketika bagian atas elemen mencapai bagian bawah viewport
+        duration: 1200,
+        once: true,
+        anchorPlacement: 'top-bottom',
     });
 </script>
 </body>
